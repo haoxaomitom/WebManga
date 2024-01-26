@@ -1,0 +1,472 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header-with-search {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  vertical-align: middle;
+  /* margin:0px 400px 0px 400px; */
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: black;
+}
+
+.header_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+}
+
+.header__search {
+  display: block;
+  align-items: center;
+  transition: max-width 0.3s ease;
+}
+
+.header__search-icon svg {
+  width: 20px;
+  /* Kích thước của icon */
+  height: 20px;
+  fill: #000;
+  /* Màu của icon */
+}
+
+
+@media (max-width: 480px) {
+  .header__title {
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .header__logo img {
+    display: block;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .header__search input {
+
+    max-width: 0;
+    padding: 0;
+    color: black;
+    height: 32px;
+    border: none;
+  }
+
+  .header__navbar-list {
+    display: none;
+  }
+
+  .header__search .header__search-input {
+    max-width: 100px;
+  }
+}
+
+.header__responsive-btn {
+  display: none;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .header__responsive-btn {
+    display: block;
+  }
+}
+
+.responsive-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-menu__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.responsive-menu__button {
+  width: 49%;
+  height: 66px;
+  border-top: 0.1px solid #3d6d7a;
+  border-bottom: 0.1px solid #3d6d7a;
+  background-color: transparent;
+  text-align: center;
+  color: #7393B3;
+  border-right: none;
+  border-left: none;
+}
+
+.responsive-menu__buttona {
+  width: 49%;
+  height: 66px;
+  border-top: 0.1px solid #000;
+  border-bottom: 0.1px solid #000;
+  background-color: transparent;
+  text-align: center;
+  color: #7393B3;
+}
+
+.responsive-menu__button:hover {
+  cursor: pointer;
+}
+
+.responsive-menu__buttona:hover {
+  cursor: pointer;
+}
+
+.header__responsive-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  transition: left 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  /* Tạo hiệu ứng mờ */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Màu nền với độ mờ */
+}
+
+.header__responsive-menu.active {
+  left: 0;
+}
+
+.responsive-menu__divider {
+  height: 1px;
+  background-color: #000;
+  margin: 10px 0;
+}
+
+
+
+.responsive-menu__button {
+  flex-grow: 1;
+}
+
+.inf-user-responsive {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+
+.header__logo {
+  max-width: 100%;
+}
+
+.header__logo img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-between;
+
+}
+
+.header__search {
+  background-color: white;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 4px;
+  align-items: center;
+}
+
+.header__search-input {
+  outline: none;
+  width: 500px;
+  font-size: 12px;
+    color: black;
+    height: 35px;
+    border:none;
+}
+
+/* nút tìm kiếm */
+.header__search-btn {
+  background-color: transparent;
+  border: none;
+  height: 22px;
+  width: 45px;
+  padding: 2px 0px 2px 0px;
+  display: block;
+  cursor: pointer;
+}
+
+.header__search-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+
+ul.header__navbar-list {
+  margin: 4px 0 0 0;
+}
+
+.header__navbar-item-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+li.header__navbar-item {
+  margin: 0 8px;
+  position: relative;
+}
+
+/* chỉnh màu và css cho các item như đăng nhập đăng kí, theo giỏi */
+li.header__navbar-item,
+.header__navbar-item-link {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-weight: 300;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* cho chử đăng nhập và đăng kí dày hơn mấy chử khác */
+.header__navbar-item--strong {
+  font-weight: 600;
+}
+
+
+/* thanh căn ngang đăng nhập và đăng kí */
+.header__navbar-item--separate::before {
+  content: "";
+  border: solid rgb(175, 175, 175) 0.5px;
+  height: 12px;
+  background-color: black;
+  position: absolute;
+  display: block;
+  right: -12px;
+  top: 2px;
+}
+
+/* di chuột vào theo dõi, đăng nhập đăng kí nó đổi màu */
+.header__navbar-item-link::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 3px;
+  width: 0px;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__navbar-item-link:hover::after {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+.header__navbar-icon-link {
+  text-decoration: none;
+  color: white;
+  padding-left: 6px;
+}
+
+.header__navbar-icon-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header__navbar-icon-link::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 3px;
+  width: 0px;
+  left: 0px;
+  bottom: -6px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.header__navbar-icon-link:hover::after {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #bb3939;
+}
+
+.navbar2__button {
+display: inline-block;
+    height: inherit;
+    width: 150px;
+    background-color: #bb3939;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar2__button:hover {
+  /* color: #ff0000;  */
+  background-color: #121212b3;
+}
+  
+  .container-down{
+
+  }
+  .select-chuong{
+    padding:50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+.select-chuong select {
+    width: 350px;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #5664e2; 
+    background-color: whitesmoke;
+    outline: none; 
+    transition: 0.5s; 
+}
+
+/* Hiệu ứng khi hover chuột */
+.select-chuong select:hover {
+    border-color: rgb(219, 29, 38);
+}
+
+.back-manga button{
+    margin: 0 20px;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #5664e2; 
+    background-color: whitesmoke;
+    outline: none; 
+    transition: 0.5s; 
+}
+.next-manga button{
+    margin: 0 20px;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #5664e2; 
+    background-color: whitesmoke;
+    outline: none; 
+    transition: 0.5s; 
+}
+
+.chap-img > div{
+    display: flex;
+    justify-content: space-around;
+}
+#back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4a4a87;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#back-to-top-button:hover {
+    background-color: #ff4a4a;
+}
+
+/* Hiển thị nút khi cuộn trang xuống một đoạn */
+@media (min-width: 768px) {
+    #back-to-top-button.visible {
+        display: block;
+    }
+}
+/* Định dạng nút chế độ tối */
+#dark-mode-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+#dark-mode-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+#dark-mode-button:hover {
+    background-color: #555;
+}
+
+
+.dark-mode {
+    display: flex;
+    margin: 0 0 20px;
+    color: white;
+    justify-content: center;
+}
+
+.container-down.active {
+    background-color: #1a1a1a;
+}
+
+
