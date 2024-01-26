@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fb4b65">
+  <meta name="google-site-verification" content="q4IuLTaLMVaPOxTeN2G01G4WkMWemT1eip0hkDkPQ0I" />
+  <title>Truyện Online</title>
+  <link rel="stylesheet" href="https://ttruyenvip.000webhostapp.com/index.css">
+  <link rel="icon" href="https://ttruyenvip.000webhostapp.com/assets/img/Layer0.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header_title">
+      <div class="header-with-search">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="https://ttruyenvip.000webhostapp.com/assets/img/Layer0.png" alt="" class="header__logo-img">
+          </a>
+        </div>
+        <div class="header__search">
+          <input type="search" class="header__search-input" placeholder="Nhập tìm kiếm">
+          <button class="header__search-btn">
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+          </button>
+        </div>
+                    <ul class="header__navbar-list">
+<!--                <li class="header__navbar-item">-->
+<!--                    <span id="username-placeholder">Xin chào </span>-->
+<!--                <a href="logout.php" class="header__navbar-item-link header__navbar-item--strong header__navbar-item--lg" style="display: none;">-->
+<!--Đăng xuất-->
+<!--</a>-->
+<!--                </li>-->
+                <li class="header__navbar-item">
+                    <a href="https://ttruyenvip.000webhostapp.com/assets/php/register.php" class="header__navbar-item-link header__navbar-item--strong header__navbar-item--separate">
+                        <i class="ti-user"></i>
+                        Đăng kí
+                    </a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="https://ttruyenvip.000webhostapp.com/assets/php/login.php" class="header__navbar-item-link header__navbar-item--strong header__navbar-item--lg">
+                        Đăng nhập
+                    </a>
+
+                </li>
+            </ul>
+        <div class="nav-left">
+          <button class="header__responsive-btn">
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__responsive-menu">
+        <div class="inf-user-responsive">
+        </div>
+        <button class="responsive-menu__buttona responsive-menu__button--top">Đăng kí</button>
+        <button class="responsive-menu__buttona">Đăng nhập</button>
+        <div class="responsive-menu__divider"></div>
+        <ul class="responsive-menu__list">
+          <li class="responsive-menu__item">
+            <button class="responsive-menu__button">Thể loại</button>
+          </li>
+          <li class="responsive-menu__item">
+            <button class="responsive-menu__button">Hot</button>
+          </li>
+          <li class="responsive-menu__item">
+            <button class="responsive-menu__button">Manga</button>
+          </li>
+          <li class="responsive-menu__item">
+            <button class="responsive-menu__button">Lightnovel</button>
+          </li>
+          <li class="responsive-menu__item">
+            <button class="responsive-menu__button">Fanpage</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="navbar2">
+    <div class="navbar2">
+      <button class="navbar2__button">Thể loại</button>
+      <button class="navbar2__button">Hot</button>
+      <button class="navbar2__button">Manga</button>
+      <button class="navbar2__button">Lightnovel</button>
+      <button class="navbar2__button">Fanpage</button>
+    </div>
+  </div>
+  <div class="container-down">
+      <div class="back-down">
+      <img src="https://ttruyenvip.000webhostapp.com/assets/img/bg1.jpg">
+    </div>
+    <div class="manga-suggest">
+      <div class="title-suggest">
+        <h2>Truyện đề cử: </h2>
+        <div class="button">
+          <button class="icon" onclick="scrollLeft1()">
+            <svg xmlns="https://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+          </button>
+          <button class="icon" onclick="scrollRight1()">
+            <svg xmlns="https://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="wrapper">
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/cao-vo-ha-canh-den-mot-van-nam-sau-3465.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Cao Võ: Hạ Cánh Đến Một Vạn Năm Sau</a>
+                  </h3>
+                  <a class="chapter-link">Chap 341</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/chuong-mon-khiem-ton-chut.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Chưởng Môn Khiêm Tốn Chút</a>
+                  </h3>
+                  <a class="chapter-link">Chap 685</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/vung-trom-giau-khong-duoc.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Vụng Trộm Giấu Không Được</a>
+                  </h3>
+                  <a class="chapter-link">Chap 109</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-sieu-cap-he-thong.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Mặt Thế Siêu cấp Hệ Thống</a>
+                  </h3>
+                  <a class="chapter-link">Chap 454</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/thuat-si-den-tu-tuong-lai-751.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Thuật Sĩ Đến Từ Tương Lai</a>
+                  </h3>
+                  <a class="chapter-link">Chap 189</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/ta-lam-kieu-hung-tai-di-gioi.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Ta Làm Kiêu Hùng Tại Dị Giới</a>
+                  </h3>
+                  <a class="chapter-link">Chap 89</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/toan-chuc-phap-su.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Toàn Chức Pháp Sư</a>
+                  </h3>
+                  <a class="chapter-link">Chap 281</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/vo-luyen-dinh-phong.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Võ Luyện Đỉnh Phong</a>
+                  </h3>
+                  <a class="chapter-link">Chap 165</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/nhan-vat-phan-dien-nay-co-chut-luong-tam-2048.jpg">
+                <div class=slide-caption>
+                  <h3>
+                    <a>Nhân Vật Phản Diện Này Có Chút Lương Tâm</a>
+                  </h3>
+                  <a class="chapter-link">Chap 243</a>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                  <a href="https://ttruyenvip.000webhostapp.com/chap-detail.html">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg">
+                </a>
+                <div class=slide-caption>
+                  <h3>
+                    <a>Mashle Muscle And Magic</a>
+                  </h3>
+                  <a class="chapter-link">Chap 78</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Truyện mới cập nhật:</h2>
+      <div class="all-manga">
+        <div class="hot-manga">
+          <div class="row">
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="9.2 trong số 10 dựa trên 233 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        9.2
+                        </div>
+                    </div>
+              <div class="img-update" href="https://ttruyenvip.000webhostapp.com/chap-detail.html">
+                  <a href="https://ttruyenvip.000webhostapp.com/chap-detail.html">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg">
+              </a>
+              </div>
+                <h3>
+                  <a href="https://ttruyenvip.000webhostapp.com/chap-detail.html">Mashle: Muscles and Magic</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 162</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 161</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 160</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="8.3 trong số 10 dựa trên 187 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        8.3
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/cao-vo-ha-canh-den-mot-van-nam-sau-3465.jpg">
+              </div>
+                <h3>
+                  <a href="">Cao Võ: Hạ Cánh Đến 1 Năm Sau</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 34</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 33</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 32</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="8.6 trong số 10 dựa trên 432 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        8.6
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-pham-nhan-78.jpg">
+              </div>
+                <h3>
+                  <a href="">Mặt Thế Phàm Nhân</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 223</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 222</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 221</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="8.7 trong số 10 dựa trên 83 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        8.7
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/chuong-mon-khiem-ton-chut.jpg">
+              </div>
+                <h3>
+                  <a href="">Chưởng Môn Khiêm Tốn Chút</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 72</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 71</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 70</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="9.1 trong số 10 dựa trên 423 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        9.1
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/dai-quan-gia-la-ma-hoang-904.jpg">
+              </div>
+                <h3>
+                  <a href="">Đại Quản Gia Là Ma Hoàng</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 276</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 275</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 274</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="9.4 trong số 10 dựa trên 328 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        9.4
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-sieu-cap-he-thong.jpg">
+              </div>
+                <h3>
+                  <a href="">Mặt Thế Siêu Cấp Hệ Thống</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 454</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 453</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 452</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="9.0 trong số 10 dựa trên 285 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        9.0
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/toan-chuc-phap-su.jpg">
+              </div>
+                <h3>
+                  <a href="">Toàn Chức Pháp Sư</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 281</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 280</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 279</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <div class="anime-extras">
+                    <div class="anime-avg-user-rating" title="9.6 trong số 10 dựa trên 659 thành viên đánh giá" data-action="click->anime-card#showLibraryEditor">
+                        <i class="fa fa-star"></i>
+                        9.6
+                        </div>
+                    </div>
+              <div class="img-update">
+                <img src="https://ttruyenvip.000webhostapp.com/assets/img/thuat-si-den-tu-tuong-lai-751.jpg">
+              </div>
+                <h3>
+                  <a href="">Thuật Sĩ Đến Từ Tương Lai</a>
+                </h3>
+                <ul class="item-chapter">
+                  <li class="chapter-num">
+                    <a href="">Chap 433</a>
+                    <i class="time">1 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 432</a>
+                    <i class="time">3 ngày trước</i>
+                  </li>
+                  <li class="chapter-num">
+                    <a href="">Chap 431</a>
+                    <i class="time">5 ngày trước</i>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box-module">
+          <div class="top-manga">
+            <div class="top-year">
+              <ul class="tab-nav">
+                <li>
+                  <a title="BXH truyện tranh theo tháng" onclick="changeTab.call(this, 'month')">Top Tháng</a>
+                </li>
+                <li>
+                  <a title="BXH truyện tranh theo tuần" onclick="changeTab(this, 'week')">Top Tuần</a>
+                </li>
+                <li>
+                  <a title="BXH truyện tranh theo ngày" onclick="changeTab(this, 'day')">Top Ngày</a>
+                </li>
+              </ul>
+              <div class="tab-pane">
+                <div class="top-month">
+                  <ul class="list-unstyled">
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">01</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/vo-luyen-dinh-phong.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Võ Luyện Đỉnh Phong</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 3409</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 23M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">02</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/toan-chuc-phap-su.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Toàn chức pháp sư</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 1054</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 10M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">03</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/dai-quan-gia-la-ma-hoang-904.jpg"
+                            alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Đại Quản Gia Là Ma Hoàng</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 415</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 9.863K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">04</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-pham-nhan-78.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Vụng Trộm Giấu Không Được</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 80.2</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 6.187K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">05</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/cao-vo-ha-canh-den-mot-van-nam-sau-3465.jpg"
+                            alt="Cao Võ Hạ Cánh Đến 1 Vạn Năm Sau">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Cao Võ Hạ Cánh Đến 1 Vạn Năm Sau</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 34">Chapter 34 </a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.903K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">06</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg"
+                            alt="Mashle: Muscles and Magic">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Mashle: Muscles and Magic</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 162</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.306K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                <li class="clearfix">
+                  <span class="txt-rank fn-order pos1">07</span>
+                  <div class="t-item comic-item" data-id="17696">
+                    <a class="thumb" title="" href="">
+                      <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/ta-lam-kieu-hung-tai-di-gioi.jpg"
+                        alt="Ta Làm Kiêu Hùng Tại Dị Giới">
+                    </a>
+                    <div class="comic-info">
+                      <h3 class="title">
+                        <a href="">Ta Làm Kiêu Hùng Tại Dị Giới</a>
+                      </h3>
+                      <div class="inline-title">
+                        <p class="chapter top">
+                          <a data-id="1021515" href="" title="Chapter 707">Chapter 707</a>
+                        </p>
+                        <p class="view-count pull-right">
+                          <i class="fa fa-eye">
+                          </i> 35.782K
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                </ul>
+                </div>
+                <div class="top-week">
+                  <ul class="list-unstyled">
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">01</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/vo-luyen-dinh-phong.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Võ Luyện Đỉnh Phong</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 3409</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 23M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">02</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/toan-chuc-phap-su.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Toàn chức pháp sư</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 1054</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 10M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">03</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/dai-quan-gia-la-ma-hoang-904.jpg"
+                            alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Đại Quản Gia Là Ma Hoàng</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 415</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 9.863K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">04</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/ta-lam-kieu-hung-tai-di-gioi.jpg"
+                            alt="Ta Làm Kiêu Hùng Tại Dị Giới">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Ta Làm Kiêu Hùng Tại Dị Giới</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 707">Chapter 707</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 35.782K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">05</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-pham-nhan-78.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Vụng Trộm Giấu Không Được</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 80.2</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 6.187K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">06</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/ta-lam-kieu-hung-tai-di-gioi.jpg"
+                            alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Ta Làm Kiêu Hùng Tại Dị Giới</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 707">Chapter 707</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i>5.903K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">07</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg"
+                            alt="Mashle: Muscles and Magic">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Mashle: Muscles and Magic</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 162</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.306K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="top-day">
+                  <ul class="list-unstyled">
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">01</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/vo-luyen-dinh-phong.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Võ Luyện Đỉnh Phong</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 3409</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 23M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">02</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/toan-chuc-phap-su.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Toàn chức pháp sư</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 1054</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 10M
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">03</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/dai-quan-gia-la-ma-hoang-904.jpg"
+                            alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Đại Quản Gia Là Ma Hoàng</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 415</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 9.863K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">04</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg"
+                            alt="Mashle: Muscles and Magic">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Mashle: Muscles and Magic</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 162</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.306K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">05</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mat-the-pham-nhan-78.jpg" alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Vụng Trộm Giấu Không Được</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 80.2</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 6.187K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">06</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/ta-lam-kieu-hung-tai-di-gioi.jpg"
+                            alt="Võ Luyện Đỉnh Phong">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Ta Làm Kiêu Hùng Tại Dị Giới</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 707">Chapter 707</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.903K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <span class="txt-rank fn-order pos1">07</span>
+                      <div class="t-item comic-item" data-id="17696">
+                        <a class="thumb" title="" href="">
+                          <img class="lazy center" src="https://ttruyenvip.000webhostapp.com/assets/img/mashle-muscles-and-magic.jpg"
+                            alt="Mashle: Muscles and Magic">
+                        </a>
+                        <div class="comic-info">
+                          <h3 class="title">
+                            <a href="">Mashle: Muscles and Magic</a>
+                          </h3>
+                          <div class="inline-title">
+                            <p class="chapter top">
+                              <a data-id="1021515" href="" title="Chapter 3409">Chapter 162</a>
+                            </p>
+                            <p class="view-count pull-right">
+                              <i class="fa fa-eye">
+                              </i> 5.306K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__list">
+      <div class="footer__list-title">
+        <div class="footer-logo">
+          <img src="https://ttruyenvip.000webhostapp.com/assets/img/Layer0.png">
+          <h2>Truyen</h2>
+        </div>
+        <p>TTruyen vietsub các thể loại truyện Trung, Hàn, Nhật với các nội dung truyện phong phú và đội ngũ vietsub
+          chất lượng đem đến trải nghiệm tốt nhất</p>
+        <p>Copyright © 2023 TTruyen All rights reserved </p>
+      </div>
+      <div class="footer__list-category">
+        <h5 for="">Các thể loại truyện</h5>
+        <ul>
+          <li><a href="">Hot</a></li>
+          <li><a href="">Manga</a></li>
+          <li><a href="">Light Novel</a></li>
+          <li><a href="">Truyện Hàn Quốc</a></li>
+          <li><a href="">Truyện Trung Quốc</a></li>
+          <li><a href="">Truyện Nhật Bản</a></li>
+        </ul>
+      </div>
+      <div class="footer__list-user-manual">
+        <h5>Thông tin và hướng dẫn</h5>
+        <ul>
+          <li><a href="">Về TTruyen</a></li>
+          <li><a href="">Liên hệ về bản quyền</a></li>
+          <li><a href="">Chính sách bảo mật</a></li>
+          <li><a href="">Đăng kí làm vietsub </a></li>
+          <li><a href="">Hỗ trợ về tài khoản</a></li>
+          <li><a href="">Báo cáo lỗi</a></li>
+        </ul>
+      </div>
+      <div class="footer__list-link">
+        <div class="footer__list-link-social">
+          <h5>Mọi vấn đề xin liên hệ</h5>
+          <div class="footer-inf">
+            <div class="facebook">
+              <img src="https://ttruyenvip.000webhostapp.com/assets/img/Screenshot 2023-07-06 130503.png" alt="">
+              <a href="">facebook.com/t.truyen</a>
+            </div>
+            <div class="mail">
+              <img src="https://ttruyenvip.000webhostapp.com/assets/img/mail.png" alt="">
+              <a href="">t.truyen@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://ttruyenvip.000webhostapp.com/assets/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var username = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : ''; ?>";
+            var registerButton = document.querySelector('.header__navbar-item-link.header__navbar-item--strong.header__navbar-item--separate');
+            var loginButton = document.querySelector('.header__navbar-item-link.header__navbar-item--strong.header__navbar-item--lg');
+            var logoutButton = document.querySelector('.header__navbar-item-link.header__navbar-item--strong.header__navbar-item--lg');
+            var usernamePlaceholder = document.getElementById('username-placeholder');
+
+            if (username !== '') {
+                // Hiển thị tên người dùng và ẩn cả nút đăng kí và nút đăng nhập
+                usernamePlaceholder.innerText = "Xin chào " + username;
+                registerButton.style.display = 'none';
+                loginButton.style.display = 'none';
+                logoutButton.style.display = 'block';
+            } else {
+                // Hiển thị nút đăng kí và nút đăng nhập, ẩn nút đăng xuất
+                registerButton.style.display = 'block';
+                loginButton.style.display = 'block';
+                logoutButton.style.display = 'none';
+            }
+        });
+        $(document).ready(function() {
+            $.ajax({
+                url: "get-username.php",
+                type: "GET",
+                success: function(response) {
+                    if (response !== '') {
+                        $("#username-placeholder").text("Xin chào " + response);
+                        $(".header__navbar-item-link.header__navbar-item--strong.header__navbar-item--separate").hide();
+                        $(".header__navbar-item-link.header__navbar-item--strong.header__navbar-item--lg").show();
+                    }
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
